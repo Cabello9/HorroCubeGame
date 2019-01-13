@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FirstCinematic : MonoBehaviour {
 
@@ -8,7 +9,7 @@ public class FirstCinematic : MonoBehaviour {
     public GameObject door;
     public GameObject bathroomDoor;
     public int sequences;
-    public GameObject ghost;
+    public GameObject instructionsObject;
     public GameObject bedroomLight;
 
     private float amount;
@@ -82,8 +83,25 @@ public class FirstCinematic : MonoBehaviour {
                 {
                     Invoke("bedroomLightOn", 0f);
                     sequences = -1;
+                    StartCoroutine(instructions());
                 }
                 break;
         }
+    }
+
+    IEnumerator instructions()
+    {
+        instructionsObject.GetComponent<Text>().text = "WASD to move";
+        instructionsObject.GetComponent<Text>().enabled = true;
+        yield return new WaitForSeconds(4f);
+
+        instructionsObject.GetComponent<Text>().text = "Move the camera with the mouse";
+        yield return new WaitForSeconds(4f);
+
+        instructionsObject.GetComponent<Text>().text = "Left mouse button to interact with some objects";
+        yield return new WaitForSeconds(4f);
+
+        instructionsObject.GetComponent<ControlText>().disableTextCall();
+        gameObject.SetActive(false);
     }
 }

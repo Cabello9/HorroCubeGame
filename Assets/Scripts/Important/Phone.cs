@@ -22,12 +22,13 @@ public class Phone : MonoBehaviour {
     private void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && GetComponent<ImportantThing>().changeColor && !speaking)
+        if (Input.GetMouseButtonDown(0) && GetComponent<ImportantThing>().highlightNow && GetComponent<ImportantThing>().changeColor && !speaking)
         {
             FindObjectOfType<CameraMovement>().movement = false;
             FindObjectOfType<CameraControl>().movement = false;
             GetComponent<ImportantThing>().highlightNow = false;
             FindObjectOfType<HearthBeatController>().sanity = 70;
+            speaking = true;
             noMovement = true;
             StartCoroutine(WaitForSound());           
         }
@@ -58,7 +59,6 @@ public class Phone : MonoBehaviour {
     IEnumerator WaitForSound()
     {
         audioSource.Stop();
-        speaking = true;
         audioSource.loop = false;
         audioSource.clip = call;
         audioSource.Play();  

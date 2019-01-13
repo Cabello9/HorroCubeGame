@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Sportlight : MonoBehaviour {
 
     public GameObject lantern;
-    public GameObject stairsLamp;
+    public GameObject text;
 
 	void Start () {
 		
@@ -16,8 +17,10 @@ public class Sportlight : MonoBehaviour {
         if(Input.GetMouseButtonDown(0) && GetComponent<ImportantThing>().changeColor)
         {
             lantern.SetActive(true);
-            stairsLamp.SetActive(false);
-            Destroy(this.gameObject);
+            text.GetComponent<Text>().text = "Flashlight picked";
+            text.GetComponent<Text>().enabled = true;
+            text.GetComponent<ControlText>().disableTextCall();
+            this.gameObject.SetActive(false);
         }
 		
 	}

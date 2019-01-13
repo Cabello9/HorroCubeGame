@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{53B993A9-2C6F-5519-8C74-D3E3DB5D03DB}</ProjectGuid>
+    <ProjectGuid>{53F614B5-0C28-DBB2-5421-B8684844E6B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,12 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\InitializeShaders.cs" />
     <Compile Include="Assets\Scripts\Bathroom\Water.cs" />
     <Compile Include="Assets\Scripts\Bathroom\WaterDrop.cs" />
     <Compile Include="Assets\Scripts\Bedroom\FirstCinematic.cs" />
     <Compile Include="Assets\Scripts\Bedroom\RotateDoor.cs" />
     <Compile Include="Assets\Scripts\Bedroom\RotateLastDoor.cs" />
+    <Compile Include="Assets\Scripts\ControlText.cs" />
     <Compile Include="Assets\Scripts\Important\Axe.cs" />
     <Compile Include="Assets\Scripts\Important\Doorknob.cs" />
     <Compile Include="Assets\Scripts\Important\DoorStreet.cs" />
@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Important\Sportlight.cs" />
     <Compile Include="Assets\Scripts\Important\WaterTap.cs" />
     <Compile Include="Assets\Scripts\ImportantThingsDetection.cs" />
+    <Compile Include="Assets\Scripts\InitializeShaders.cs" />
     <Compile Include="Assets\Scripts\Lantern.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\Player\CameraControl.cs" />
@@ -100,42 +101,42 @@
     <Compile Include="Assets\Scripts\Trigger\QuitGame.cs" />
     <Compile Include="Assets\Scripts\Trigger\ScareLivingRoom.cs" />
     <Compile Include="Assets\Scripts\Trigger\SecondCall.cs" />
-    <Compile Include="Assets\TurnOffLights.cs" />
+    <Compile Include="Assets\Scripts\TurnOffLights.cs" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.IncludePaths">
-      <HintPath>D:/Escritorio/Porsi/TensionHouse/Library/ScriptAssemblies/Unity.RenderPipelines.Core.IncludePaths.dll</HintPath>
+      <HintPath>D:/Escritorio/Unity-Projects/HorrorCubeGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.IncludePaths.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

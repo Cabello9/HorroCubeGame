@@ -174,3 +174,7 @@ D:\Escritorio\Unity-Projects\TensionHouse\Temp\bin\Debug\Unity.RenderPipelines.C
 D:\Escritorio\Unity-Projects\TensionHouse\Temp\bin\Debug\Unity.RenderPipelines.Lightweight.Editor.dll
 D:\Escritorio\Unity-Projects\TensionHouse\Temp\bin\Debug\Unity.RenderPipelines.Lightweight.Runtime.dll
 D:\Escritorio\Unity-Projects\TensionHouse\Temp\bin\Debug\Unity.ShaderGraph.Editor.dll
+D:\Escritorio\Unity-Projects\HorrorCubeGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\Escritorio\Unity-Projects\HorrorCubeGame\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+D:\Escritorio\Unity-Projects\HorrorCubeGame\obj\Debug\Assembly-CSharp.dll
+D:\Escritorio\Unity-Projects\HorrorCubeGame\obj\Debug\Assembly-CSharp.pdb

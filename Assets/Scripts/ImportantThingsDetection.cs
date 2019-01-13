@@ -11,7 +11,6 @@ public class ImportantThingsDetection : MonoBehaviour {
 
     private bool detectImportantThings = false;
     private GameObject lastGameObject;
-    private Vector3 screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0f);
     private RaycastHit hit;
 
     void Update () {
