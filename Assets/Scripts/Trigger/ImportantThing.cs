@@ -21,7 +21,7 @@ public class ImportantThing : MonoBehaviour {
 
             for(int i = 0; i < transform.childCount; i++)
             {
-                transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_ColorSuperficial", edgeColor);
+               transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_ColorSuperficial", edgeColor);  
             }
         }
         else
@@ -30,7 +30,7 @@ public class ImportantThing : MonoBehaviour {
 
             for (int i = 0; i < transform.childCount; i++)
             {
-                transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_ColorSuperficial", Color.black);
+               transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_ColorSuperficial", Color.black);                    
             }
         }
 	}
